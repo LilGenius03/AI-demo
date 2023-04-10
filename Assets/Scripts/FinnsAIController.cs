@@ -5,8 +5,8 @@ using UnityEngine.AI;
 
 public class FinnsAIController : MonoBehaviour
 {
-
     private NavMeshAgent _navMeshAgent;
+    public float timer, wanderTime;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,11 +25,25 @@ public class FinnsAIController : MonoBehaviour
             }
             
         }
+
+        timer += Time.deltaTime;
     }
 
     private void SetAITargetLocation(Vector3 targetLocation)
     {
         _navMeshAgent.SetDestination(targetLocation);
+    }
+
+    private void Wander()
+    {
+        if(timer >= wanderTime)
+        {
+            Vector2 wanderTarget = Random.insideUnitCircle * wanderTime;
+            Vector3 wanderPos3D = new Vector3(transform.position.x + wanderTarget.x, transform.position.y, transform.position.z + wanderTarget.y);
+            SetAITargetLocation(wanderPos3D);
+            timer = 0;
+        }
+        
     }
 
 }
