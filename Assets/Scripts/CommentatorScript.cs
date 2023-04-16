@@ -9,6 +9,13 @@ public class CommentatorScript : MonoBehaviour
 
     private UnityEngine.AI.NavMeshAgent _navMeshAgent;
 
+    public TextMeshProUGUI commentaryText;
+
+    public float commentaryCooldown = 5.0f;
+    private float lastCommentaryTime = 0.0f;
+
+    public string nextComment = "We're in for a treat tonight folks, both competitors are in it to win it!!";
+
     void Start()
     {
 
@@ -31,11 +38,31 @@ public class CommentatorScript : MonoBehaviour
         SetCommentatorTargetLocation(newLocation);
 
 
-     
+        if (Time.time > lastCommentaryTime + commentaryCooldown)
+        {
+
+            commentaryText.text = nextComment;
+
+            lastCommentaryTime = Time.time;
+
+        }
+
+        if (toPlayer.x < toAI.x)
+        {
+
+            nextComment = "And it seems like our Challenger is in the lead!! But how long will it stay that way?";
+
+        }
+
+        if (toPlayer.x > toAI.x)
+        {
+
+            nextComment = "Our prototype robot is beating out the challenger!! Can this plucky contender overcome the odds?";
+
+        }
 
 
     }
-
 
 
     private void SetCommentatorTargetLocation(Vector3 targetLocation)
