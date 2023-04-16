@@ -32,6 +32,7 @@ public class CommentatorScript : MonoBehaviour
         Vector3 newLocation = new Vector3(midpoint.x, transform.position.y, transform.position.z);
         
         SetCommentatorTargetLocation(newLocation);
+        
 
     }
 
