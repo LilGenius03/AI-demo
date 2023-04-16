@@ -8,5 +8,11 @@ public class MenuScriptJames : MonoBehaviour
 			SceneManager.LoadScene("AI demo");
 		}
 
+	public void QuitGame()
+    {
+		Application.Quit();
+		Debug.Log("Quit");
+    }
+
 
 }

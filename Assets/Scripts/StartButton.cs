@@ -7,6 +7,7 @@ public class StartButton : MonoBehaviour
 {
     public Button start;
     public Image Panel;
+    public AudioSource Music;
    
     private void Awake()
     {
@@ -30,5 +31,6 @@ public class StartButton : MonoBehaviour
 
         start.gameObject.SetActive(false);
         Panel.gameObject.SetActive(false);
+        Music.Play();
     }
 }
