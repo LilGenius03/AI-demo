@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class FinnsInsultsScript : MonoBehaviour
 {
-    public string[] insults = { "My mum is faster than that!", "I can beat you with my eyes closed!", "They should rename driving too slow law after you!", "How stupid can you be!", "If I'm the hare than your definetly the tortuse!" };
+    public string[] insults = { "My mum is faster than that!", "I can beat you with my eyes closed!", "They should rename driving too slow law after you!", "How stupid can you be!", "If I'm the hare than your definetly the tortuse!", "You aint ever making it out of this maze!", "Eat my dust!", "Way to go blockhead!", 
+    "You lost? haha", "You need your mom to guide you out?", "Idiot"};
     public float insultDistance = 5.0f;
 
     public float insultCooldown = 2.0f; 
     private float lastInsultTime = 0.0f;
+    public GameObject Text;
 
     private void Update()
     {
