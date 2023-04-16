@@ -4776,7 +4776,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   randNum: 0
-  insultDisp: {fileID: 0}
+  insultDisp: {fileID: 1869194467}
   genInsult: 0
 --- !u!1 &1923749489
 GameObject:
