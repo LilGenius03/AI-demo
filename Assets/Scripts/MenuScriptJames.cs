@@ -14,5 +14,17 @@ public class MenuScriptJames : MonoBehaviour
 		Debug.Log("Quit");
     }
 
+	public void HardMode()
+    {
+		SceneManager.LoadScene("AI demo Hard");
+		Debug.Log("HardMode");
+    }
+
+	public void EasyMode()
+    {
+		SceneManager.LoadScene("AI demo Easy");
+		Debug.Log("EasyMode");
+	}
+
 
 }

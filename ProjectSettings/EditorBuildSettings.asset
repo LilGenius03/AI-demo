@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/AI demo.unity
     guid: 6d969b988f236a1429c52fe76c8e6ea5
   - enabled: 1
+    path: Assets/Scenes/AI demo Easy.unity
+    guid: c076511135ff4d24799b657cdb843da7
+  - enabled: 1
+    path: Assets/Scenes/AI demo Hard.unity
+    guid: d5e6fcb3d7c54974e8911e7511533719
+  - enabled: 1
     path: Assets/Scenes/PlayerWins.unity
     guid: dd91819eff280f04a9bdeff1ad7e9adc
   - enabled: 1
