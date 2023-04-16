@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 using UnityEngine.UI;
 
 public class JamesInsultScript : MonoBehaviour
 {
 
     public int randNum;
-    public GameObject insultDisp;
+    public TextMeshProUGUI insultDisp;
     public bool genInsult = false;
  
     // Update is called once per frame
