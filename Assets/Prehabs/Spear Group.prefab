@@ -17,7 +17,7 @@ GameObject:
   m_Name: simple spear  (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
+  m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2730920279143943257
@@ -130,7 +130,7 @@ GameObject:
   m_Name: simple spear  (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
+  m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2730920279553086232
@@ -326,6 +326,10 @@ PrefabInstance:
     - target: {fileID: 7927625697927004162, guid: bb878a87017a96f42a4fb419020eea7e, type: 3}
       propertyPath: m_Name
       value: 'simple spear '
+      objectReference: {fileID: 0}
+    - target: {fileID: 7927625697927004162, guid: bb878a87017a96f42a4fb419020eea7e, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb878a87017a96f42a4fb419020eea7e, type: 3}
