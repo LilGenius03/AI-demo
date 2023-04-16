@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class FinnsInsultsScript : MonoBehaviour
@@ -10,7 +12,7 @@ public class FinnsInsultsScript : MonoBehaviour
 
     public float insultCooldown = 2.0f; 
     private float lastInsultTime = 0.0f;
-    public GameObject Text;
+    public TextMeshProUGUI insultText;
 
     private void Update()
     {
@@ -26,6 +28,8 @@ public class FinnsInsultsScript : MonoBehaviour
                 {
                     string insult = GetRandomInsult();
                     Debug.Log(insult);
+
+                    insultText.text = insult;
 
                     lastInsultTime = Time.time;
                 }

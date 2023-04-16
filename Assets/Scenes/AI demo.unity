@@ -1444,7 +1444,7 @@ MonoBehaviour:
   - Idiot
   insultDistance: 5
   insultCooldown: 2
-  Text: {fileID: 1568803015}
+  insultText: {fileID: 0}
 --- !u!1 &950554301
 GameObject:
   m_ObjectHideFlags: 0
@@ -2710,7 +2710,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 144.64}
+  m_AnchoredPosition: {x: -100, y: 133}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1568803018
@@ -2760,15 +2760,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 56
-  m_fontSizeBase: 56
+  m_fontSize: 74.2
+  m_fontSizeBase: 74.2
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -2796,7 +2796,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -259.45233, w: -203.00879}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2931,7 +2931,6 @@ GameObject:
   - component: {fileID: 1845373583}
   - component: {fileID: 1845373582}
   - component: {fileID: 1845373581}
-  - component: {fileID: 1845373584}
   m_Layer: 0
   m_Name: TriggerBlueMan
   m_TagString: Untagged
@@ -3017,33 +3016,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1845373578}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1845373584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1845373578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f38ce92eca169a140aa828fb6882592b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  insults:
-  - My mum is faster than that!
-  - I can beat you with my eyes closed!
-  - They should rename driving too slow law after you!
-  - How stupid can you be!
-  - If I'm the hare than your definetly the tortuse!
-  - You aint ever making it out of this maze!
-  - Eat my dust!
-  - Way to go blockhead!
-  - You lost? haha
-  - You need your mom to guide you out?
-  - Idiot
-  insultDistance: 5
-  insultCooldown: 2
-  Text: {fileID: 1568803015}
 --- !u!1 &1853651706
 GameObject:
   m_ObjectHideFlags: 0
@@ -3070,7 +3042,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1853651706}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0.13}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_ConstrainProportionsScale: 1
@@ -3078,7 +3050,7 @@ RectTransform:
   - {fileID: 1568803016}
   m_Father: {fileID: 1869194471}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0.24, y: 2.83}
@@ -3341,9 +3313,9 @@ MonoBehaviour:
   - They should rename driving too slow law after you!
   - How stupid can you be!
   - If I'm the hare than your definetly the tortuse!
-  insultDistance: 5
+  insultDistance: 20
   insultCooldown: 5
-  Text: {fileID: 0}
+  insultText: {fileID: 1568803018}
 --- !u!1 &1871822877
 GameObject:
   m_ObjectHideFlags: 0
@@ -3389,6 +3361,7 @@ GameObject:
   - component: {fileID: 1890737099}
   - component: {fileID: 1890737105}
   - component: {fileID: 1890737103}
+  - component: {fileID: 1890737107}
   - component: {fileID: 1890737104}
   - component: {fileID: 1890737106}
   m_Layer: 0
@@ -3542,6 +3515,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.4
   m_Center: {x: -0.71, y: 0.08, z: 0}
+--- !u!114 &1890737107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890737098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc65c3f35d8209d41a7041ddf0f31490, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  randNum: 0
+  insultDisp: {fileID: 0}
+  genInsult: 0
 --- !u!1 &1923749489
 GameObject:
   m_ObjectHideFlags: 0
